@@ -4,8 +4,5 @@ html, body, iframe {
   margin: 0;
   border: 0;
   padding: 0;
-}
-
-div.punch-viewer-navbar.punch-viewer-navbar-fixed {
-  display: none;
+  overflow: hidden;
 }
