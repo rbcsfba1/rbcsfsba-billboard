@@ -1,42 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RBCSFBA BillBoard</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RBCSFBA BillBoard</title>
-  <link href="styles.css" rel="stylesheet" />
-</head>
-
-<body bgcolor="#000000">
-  <iframe
-    id="webview"
-    src=""
-    frameborder="0"
-    width="100%"
-    height="100%"
-    allowfullscreen="true"
-    mozallowfullscreen="true"
-    webkitallowfullscreen="true"
-  ></iframe>
-  <script type="text/javascript" >
-    const AUTOSTART = true;           // Auto start slideshow
-    const LOOP = true;                // Loop slideshow indefinitely
-    const AUTOADVANCE_DELAY_SEC = 3;  // Slides auto-advance delay (in seconds)
-    const REFRESH_INTERVAL_SEC = 60;  // Viewer auto-refresh interval (in seconds)
-    
-    const WEBVIEW_SRC = `https://docs.google.com/presentation/d/e/2PACX-1vSo7mIEXlh3D43vVq_PSulOp1VV1W8bCXE5uM0JuhZjsqnwReg5HZsu2-AK5zrjM1__nj20GPpR78J2/embed?rm=minimal&embedded=true&start=${AUTOSTART}&loop=${LOOP}&delayms=${AUTOADVANCE_DELAY_SEC * 1000}`;
-
-    const iFrame = document.querySelector("iframe#webview");
-    const run = async () => {
-      iFrame.src = WEBVIEW_SRC;
-      console.log("[WEBVIEW]: Refreshed");
-      setTimeout(run, REFRESH_INTERVAL_SEC * 1000);
-    };
-    
-    run();
-  </script>
-</body>
-
+  <body bgcolor="#000000">
+    <iframe
+      id="webview"
+      src=""
+      frameborder="0"
+      width="100%"
+      height="100%"
+      allowfullscreen="true"
+      mozallowfullscreen="true"
+      webkitallowfullscreen="true"
+    ></iframe>
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
 </html>
